@@ -14,16 +14,18 @@ ii. Requirement Program dan Instalasi Module/Package Tertentu bila ada:
     2. time
     3. os
   Install library-library yang digunakan (author menggunakan modul pip untuk menginstal library):
-    - Contoh: memasukkan input berupa "pip install numpy" pada cli untuk menginstall library
+			- Contoh: memasukkan input berupa "pip install numpy" pada cli untuk menginstall library
 iii. Langkah Compile Program jika Diperlukan:
 - Tidak ada compile program, program cukup dijalankan dengan menggunakan bin/run.bat
 
 iv. Cara Menggunakan Program:
 1. Siapkan test case dengan menyimpan file .txt berisi posisi awal 15-puzzle yang ingin di solve pada folder test dalam format file .txt, contoh isi .txt yang valid:
-    ```- 1 3 4
+    ```
+		- 1 3 4
     5 2 6 8
     9 10 7 15
-    13 14 12 11```
+    13 14 12 11
+		```
 2. Jalankan file run.bat pada folder bin
 3. Masukan input berupa nama file test case yang ingin diuji (dan sudah tersimpan pada folder test) ke program run.bat yang telah dijalankan, kemudian enter
 4. Jika unsolvable, program akan menampilkan output bahwa program tidak dapat diselesaikan
