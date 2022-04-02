@@ -14,7 +14,7 @@ ii. Requirement Program dan Instalasi Module/Package Tertentu bila ada:
     2. time
     3. os
   * Install library-library yang digunakan (author menggunakan modul pip untuk menginstal library):
-			- Contoh: memasukkan input berupa "pip install numpy" pada cli untuk menginstall library
+			- Contoh: memasukkan input berupa "pip install numpy" pada cli untuk menginstall library numpy
 			
 iii. Langkah Compile Program jika Diperlukan:
 - Tidak ada compile program, program cukup dijalankan dengan menggunakan bin/run.bat
