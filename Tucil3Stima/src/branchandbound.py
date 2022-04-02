@@ -1,3 +1,4 @@
+# 13520127 Adzka Ahmadetya Zaidan
 import numpy as np
 
 # Mengembalikan nilai dari Kurang(i)

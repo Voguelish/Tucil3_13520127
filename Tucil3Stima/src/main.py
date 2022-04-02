@@ -1,3 +1,4 @@
+# 13520127 Adzka Ahmadetya Zaidan
 import numpy as np
 import branchandbound as f
 import time as t
@@ -5,6 +6,11 @@ import os
 
 cwd = os.path.dirname(os.getcwd())
 os.chdir(cwd+'\\test')
+
+print('O━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━O')
+print('|         15-Puzzle Solver         |')
+print('| Using Branch and Bound Algorithm |')
+print('O━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━O\n')
 
 while True:
   filename = str(input('Enter file name:\n>>> '))
@@ -27,11 +33,12 @@ while True:
     print('Puzzle is unsolvable.')
     print('SigmaKurang(i) + X = '+str(f.SigmaKurang(startS) + f.X(startS))+'\n')
   else: # Jika simpul awal memiliki suatu solusi
+    print('Searching...')
     start = t.time()
     idx = 0
     # Melakukan loop jika belum ditemukan solusi
     # Jika jumlah simpul yang dibangkitkan sudah terlalu banyak, pencarian berhenti
-    while not f.IsGoalState(f.SimpliceFromPath(startS, path[idx])) and len(path) < 100000:
+    while not f.IsGoalState(f.SimpliceFromPath(startS, path[idx])):
       currS = f.SimpliceFromPath(startS, path[idx])
       if len(path[idx]) != 0:
         prevMove = path[idx][len(path[idx])-1]
@@ -52,16 +59,12 @@ while True:
     if f.IsGoalState(f.SimpliceFromPath(startS, path[idx])):
       end = t.time()
       timeTaken = round((end-start), 4)
-      print('━━━━━━━ Solution Found !!! ━━━━━━━')
+      print('\n━━━━━━━ Solution Found !!! ━━━━━━━')
       f.DisplaySimplices(startS, path[idx])
       print('Solution Sequence'+' ('+str(len(path[idx]))+'): ', end='')
       for i in range(len(path[idx])):
         print(path[idx][i], end=' ')
       print('\nTime taken:', str(timeTaken), 'seconds')
-      print('Simplices created:', len(path), '\n')
-      
-    else: # Jumlah simpul yang dibangkitkan sudah terlalu banyak
-      print('Too many simplices created. Stopped searching.')
       print('Simplices created:', len(path), '\n')
   
   flag = True
@@ -72,7 +75,7 @@ while True:
     elif (exit == 'N' or exit == 'n'):
       break
     else:
-      print('Invalid input.')
+      print('Invalid input.\n')
   if (exit == 'N' or exit == 'n'):
     break
 print('\nProgram successfully closed.\n')
