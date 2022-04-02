@@ -1,4 +1,4 @@
-# Penyelesaian Persoalan 15-Puzzle dengan Algoritma Branch and Bound
+# Program Penyelesaian Persoalan 15-Puzzle dengan Algoritma Branch and Bound
 
 i. Deskripsi Singkat Program:
 - Program ini dibuat untuk memenuhi tugas kecil 3 IF2211 Strategi Algoritma Semester 2 tahun 2021/2022
