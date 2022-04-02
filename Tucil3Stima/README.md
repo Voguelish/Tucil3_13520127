@@ -25,7 +25,7 @@ iv. Cara Menggunakan Program:
     9 10 7 15
     13 14 12 11
 2. Jalankan file run.bat pada folder bin
-3. Masukan input berupa nama file test case yang ingin diuji pada program run.bat yang telah dijalankan, kemudian enter
+3. Masukan input berupa nama file test case yang ingin diuji (dan sudah tersimpan pada folder test) ke program run.bat yang telah dijalankan, kemudian enter
 4. Jika unsolvable, program akan menampilkan output bahwa program tidak dapat diselesaikan
 5. Jika solvable, program akan melakukan loop pencarian hingga ditemukan solusi dan akan menampilkan output berupa jalan dari simpul awal ke simpul akhir
 
